@@ -152,7 +152,7 @@ int SerialPort::send(void *buf, int len)
 
         //创建一个用于OVERLAPPED的事件处理，不会真正用到，但系统要求这么做
         memset(&m_osWrite, 0, sizeof(m_osWrite));
-        m_osWrite.hEvent = CreateEvent(NULL, TRUE, FALSE, (L"WriteEvent"));
+        m_osWrite.hEvent = CreateEvent(NULL, TRUE, FALSE, reinterpret_cast<LPCSTR>(L"WriteEvent"));
 
         ClearCommError(hCom, &dwErrorFlags, &comStat); //清除通讯错误，获得设备当前状态
         BOOL bWriteStat = WriteFile(hCom, //串口句柄
@@ -206,7 +206,7 @@ int SerialPort::receive(void *buf, int maxlen)
 
         //创建一个用于OVERLAPPED的事件处理，不会真正用到，但系统要求这么做
         memset(&m_osRead, 0, sizeof(m_osRead));
-        m_osRead.hEvent = CreateEvent(NULL, TRUE, FALSE, (L"ReadEvent"));
+        m_osRead.hEvent = CreateEvent(NULL, TRUE, FALSE, reinterpret_cast<LPCSTR>(L"ReadEvent"));
 
         ClearCommError(hCom, &dwErrorFlags, &comStat); //清除通讯错误，获得设备当前状态
         if (!comStat.cbInQue)return 0; //如果输入缓冲区字节数为0，则返回false
@@ -238,18 +238,17 @@ int SerialPort::receive(void *buf, int maxlen)
 
 //void SerialPort::sendData(const char *COM, int baudrate, char parity, char databit, char stopbit, const char *str){
 void SerialPort::sendData(char *COM, int baudrate, char parity, char databit, char stopbit, char *str){
-  SerialPort w;
-  if (w.open(COM, baudrate, parity, databit, stopbit))
-  {
-    for (int i = 0; i < strlen(str); i++)
+    SerialPort w;
+    if (w.open(COM, baudrate, parity, databit, stopbit))
     {
-      w.send(str, strlen(str));
+        for (int i = 0; i < strlen(str); i++)
+        {
+            w.send(str, strlen(str));
+        }
+        std::cout << "send finished...";
     }
-    std::cout << "send finished..." << std::endl;
-    w.close();
-  }
-  else
-  {
-    std::cout << "open serial port failed..." << std::endl;
-  }
+    else
+    {
+        std::cout << "open serial port failed...";
+    }
 }

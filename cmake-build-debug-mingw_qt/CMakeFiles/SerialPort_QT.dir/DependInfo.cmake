@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/software/CLionProjects/SerialPort/SerialPort/SerialPort.cpp" "D:/software/CLionProjects/SerialPort/cmake-build-debug-mingw_qt/CMakeFiles/SerialPort_QT.dir/SerialPort/SerialPort.cpp.obj"
-  "D:/software/CLionProjects/SerialPort/main.cpp" "D:/software/CLionProjects/SerialPort/cmake-build-debug-mingw_qt/CMakeFiles/SerialPort_QT.dir/main.cpp.obj"
+  "D:/software/CLionProjects/SerialPort_QT/SerialPort/SerialPort.cpp" "D:/software/CLionProjects/SerialPort_QT/cmake-build-debug-mingw_qt/CMakeFiles/SerialPort_QT.dir/SerialPort/SerialPort.cpp.obj"
+  "D:/software/CLionProjects/SerialPort_QT/main.cpp" "D:/software/CLionProjects/SerialPort_QT/cmake-build-debug-mingw_qt/CMakeFiles/SerialPort_QT.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

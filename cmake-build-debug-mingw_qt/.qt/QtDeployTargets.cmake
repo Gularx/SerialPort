@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_SerialPort_QT_FILE D:/software/CLionProjects/SerialPort/cmake-build-debug-mingw_qt/SerialPort_QT.exe)
+set(__QT_DEPLOY_TARGET_SerialPort_QT_FILE D:/software/CLionProjects/SerialPort_QT/cmake-build-debug-mingw_qt/SerialPort_QT.exe)
 set(__QT_DEPLOY_TARGET_SerialPort_QT_RUNTIME_DLLS D:/software/QT/6.7.1/mingw_64/bin/Qt6Widgets.dll;D:/software/QT/6.7.1/mingw_64/bin/Qt6Multimedia.dll;D:/software/QT/6.7.1/mingw_64/bin/Qt6Gui.dll;D:/software/QT/6.7.1/mingw_64/bin/Qt6Network.dll;D:/software/QT/6.7.1/mingw_64/bin/Qt6Core.dll)

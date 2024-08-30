@@ -1,4 +1,4 @@
-# Install script for directory: D:/software/CLionProjects/SerialPort
+# Install script for directory: D:/software/CLionProjects/SerialPort_QT
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/software/CLionProjects/SerialPort/cmake-build-debug-mingw_qt/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/software/CLionProjects/SerialPort_QT/cmake-build-debug-mingw_qt/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

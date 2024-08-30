@@ -1,23 +1,5 @@
-"D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" -S D:\software\CLionProjects\SerialPort -B D:\software\CLionProjects\SerialPort\cmake-build-debug-mingw_qt
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: D:/software/QT/Tools/mingw1120_64/bin/gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: D:/software/QT/Tools/mingw1120_64/bin/c++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
--- Performing Test HAVE_STDATOMIC
--- Performing Test HAVE_STDATOMIC - Success
--- Found WrapAtomic: TRUE  
+"D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" -S D:\software\CLionProjects\SerialPort_QT -B D:\software\CLionProjects\SerialPort_QT\cmake-build-debug-mingw_qt
 -- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Configuring done (6.4s)
--- Generating done (0.0s)
--- Build files have been written to: D:/software/CLionProjects/SerialPort/cmake-build-debug-mingw_qt
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/software/CLionProjects/SerialPort_QT/cmake-build-debug-mingw_qt
