@@ -1,0 +1,3 @@
+"D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\SerialPort_QT.dir/objects.a
+D:\software\QT\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\SerialPort_QT.dir/objects.a @CMakeFiles\SerialPort_QT.dir\objects1.rsp
+D:\software\QT\Tools\mingw1120_64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\SerialPort_QT.dir/objects.a -Wl,--no-whole-archive -o SerialPort_QT.exe -Wl,--out-implib,libSerialPort_QT.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SerialPort_QT.dir\linkLibs.rsp
